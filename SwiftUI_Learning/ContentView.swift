@@ -12,7 +12,15 @@ struct ContentView: View {
     
     var body: some View {
         
-        Text("I am rich").font(.system(size: 40))
+        ZStack {
+            Color(.systemTeal)
+                .edgesIgnoringSafeArea(.all)
+            VStack {
+                Text("I am rich").font(.system(size: 40))
+                Image("diamond").resizable().aspectRatio(contentMode: .fit).frame(width: 200,height: 100,alignment: .center)
+                    
+            }
+        }
     }
 }
 
