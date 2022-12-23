@@ -10,26 +10,30 @@ import CoreData
 
 struct ContentView: View {
     
+  @State  private var showingProfileScreen = false
+    
     var body: some View {
-        
-        ZStack {
-            Color(.systemTeal)
-                .edgesIgnoringSafeArea(.all)
-            VStack {
+        NavigationView{
+            ZStack {
+                Image("caro1").resizable().edgesIgnoringSafeArea(.all)
+                Button("Switch To Profile", action :  {
+                    
+                  toDo()
+                    
+                }).foregroundColor(.white).font(Font.system(size: 40))
                 
-                Image("tom").resizable().aspectRatio(contentMode: .fit).frame(width: 180).clipShape(Circle()).overlay(Circle().stroke(.black, lineWidth: 4))
-                Text("Rohit Sharma").font(Font.custom("Pacifico-Regular", size: 40))
-                    .foregroundColor(.white)
-                Text("Application Engineer").font(Font.custom("Regular", size: 22)).foregroundColor(.white).bold()
-                
-                Divider()
-                InfoView(text: "+91 8312309876", iconName: "phone.fill")
-                InfoView(text: "rohitmou25@gmail.com", iconName: "envelope.fill")
+                NavigationLink(destination: ProfileView(), isActive: $showingProfileScreen){
+                }.navigationBarHidden(true)
             }
-        }
+           
+               }
+        .navigationBarHidden(true)
     }
-}
+    func toDo(){
+        self.showingProfileScreen = true
+    }
 
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
