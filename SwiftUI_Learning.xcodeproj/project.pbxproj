@@ -16,6 +16,9 @@
 		8C26F055295433FE002869B1 /* SwiftUI_LearningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C26F054295433FE002869B1 /* SwiftUI_LearningTests.swift */; };
 		8C26F05F295433FE002869B1 /* SwiftUI_LearningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C26F05E295433FE002869B1 /* SwiftUI_LearningUITests.swift */; };
 		8C26F061295433FE002869B1 /* SwiftUI_LearningUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C26F060295433FE002869B1 /* SwiftUI_LearningUITestsLaunchTests.swift */; };
+		8C26F0732954C1A5002869B1 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C26F0722954C1A5002869B1 /* Launch Screen.storyboard */; };
+		8C26F0742954C2F8002869B1 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C26F06E2954BB4A002869B1 /* Pacifico-Regular.ttf */; };
+		8C371BE02954C8680084F65A /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C371BDF2954C8680084F65A /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,10 @@
 		8C26F05A295433FE002869B1 /* SwiftUI_LearningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUI_LearningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C26F05E295433FE002869B1 /* SwiftUI_LearningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_LearningUITests.swift; sourceTree = "<group>"; };
 		8C26F060295433FE002869B1 /* SwiftUI_LearningUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_LearningUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8C26F06E2954BB4A002869B1 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		8C26F0712954BEC2002869B1 /* SwiftUI-Learning-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SwiftUI-Learning-Info.plist"; sourceTree = SOURCE_ROOT; };
+		8C26F0722954C1A5002869B1 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		8C371BDF2954C8680084F65A /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,12 +105,16 @@
 		8C26F03D295433FC002869B1 /* SwiftUI_Learning */ = {
 			isa = PBXGroup;
 			children = (
+				8C26F0712954BEC2002869B1 /* SwiftUI-Learning-Info.plist */,
+				8C26F06D2954BB12002869B1 /* Fonts */,
 				8C26F03E295433FC002869B1 /* SwiftUI_LearningApp.swift */,
 				8C26F040295433FC002869B1 /* ContentView.swift */,
 				8C26F042295433FD002869B1 /* Assets.xcassets */,
 				8C26F047295433FD002869B1 /* Persistence.swift */,
 				8C26F049295433FD002869B1 /* SwiftUI_Learning.xcdatamodeld */,
 				8C26F044295433FD002869B1 /* Preview Content */,
+				8C26F0722954C1A5002869B1 /* Launch Screen.storyboard */,
+				8C371BDF2954C8680084F65A /* InfoView.swift */,
 			);
 			path = SwiftUI_Learning;
 			sourceTree = "<group>";
@@ -131,6 +142,14 @@
 				8C26F060295433FE002869B1 /* SwiftUI_LearningUITestsLaunchTests.swift */,
 			);
 			path = SwiftUI_LearningUITests;
+			sourceTree = "<group>";
+		};
+		8C26F06D2954BB12002869B1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8C26F06E2954BB4A002869B1 /* Pacifico-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +256,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C26F0732954C1A5002869B1 /* Launch Screen.storyboard in Resources */,
+				8C26F0742954C2F8002869B1 /* Pacifico-Regular.ttf in Resources */,
 				8C26F046295433FD002869B1 /* Preview Assets.xcassets in Resources */,
 				8C26F043295433FD002869B1 /* Assets.xcassets in Resources */,
 			);
@@ -266,6 +287,7 @@
 				8C26F048295433FD002869B1 /* Persistence.swift in Sources */,
 				8C26F041295433FC002869B1 /* ContentView.swift in Sources */,
 				8C26F03F295433FC002869B1 /* SwiftUI_LearningApp.swift in Sources */,
+				8C371BE02954C8680084F65A /* InfoView.swift in Sources */,
 				8C26F04B295433FD002869B1 /* SwiftUI_Learning.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +449,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_Learning/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-Learning-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -455,6 +478,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_Learning/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-Learning-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
